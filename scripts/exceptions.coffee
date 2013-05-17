@@ -19,7 +19,7 @@ incrementCounter = (data, cat, key) ->
   data[cat] = counters
 
 module.exports = (robot) ->
-  robot.hear /(.*) (.*exception)(.*)/i, (msg) ->
+  robot.respond /(.*) (.*exception)(.*)/i, (msg) ->
     msg.send "Aie! : Got a #{msg.match[2]} from #{msg.match[1]} complaining about #{msg.match[3]}"
     key = "exceptions_#{today()}"
 
