@@ -15,9 +15,9 @@
   },
 
   "dependencies": {
-    "hubot-flowdock": ">= 0.4.0",
-    "hubot": ">=2.4.0",
-    "hubot-scripts": ">=2.4.0",
-    "optparse": "1.0.3"
+    "hubot-flowdock": ">= 0.6.0",
+    "hubot": ">=2.8.0",
+    "hubot-scripts": ">=2.8.0",
+    "optparse": ">=1.0.4"
   }
 }
