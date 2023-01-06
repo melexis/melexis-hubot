@@ -201,7 +201,7 @@ describe 'Robot', ->
 
       @robot.receive testMessage
 
-      expect(listenerCallback).to.have.been.called.once
+      expect(listenerCallback).to.have.been.calledOnce
       expect(catchAllCallback).to.not.have.been.called
 
     it 'stops processing if message.finish() is called synchronously', ->

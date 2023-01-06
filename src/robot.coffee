@@ -47,7 +47,7 @@ class Robot
     @Response  = Response
     @commands  = []
     @listeners = []
-    @logger    = new Log process.env.HUBOT_LOG_LEVEL or 'info'
+    @logger    = Log.get('robot')
     @pingIntervalId = null
 
     @parseVersion()

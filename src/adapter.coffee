@@ -5,6 +5,7 @@ class Adapter extends EventEmitter
   #
   # robot - A Robot instance.
   constructor: (@robot) ->
+    super()
 
   # Public: Raw method for sending data back to the chat source. Extend this.
   #

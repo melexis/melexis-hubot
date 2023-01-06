@@ -17,8 +17,8 @@ class TextMessage extends Message
   # user - A User instance that sent the message.
   # text - A String message.
   # id   - A String of the message ID.
-  constructor: (@user, @text, @id) ->
-    super @user
+  constructor: (user, @text, @id) ->
+    super user
 
   # Determines if the message matches the given regex.
   #
@@ -59,8 +59,9 @@ class CatchAllMessage extends Message
   # Represents a message that no matchers matched.
   #
   # message - The original message.
-  constructor: (@message) ->
-    super @message.user
+  constructor: (message) ->
+    super message.user
+    @message = message
 
 module.exports = {
   Message
